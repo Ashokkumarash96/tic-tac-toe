@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px rgb(0, 0, 0);
+}
+
+html,
+body {
+  background-color: rgb(39, 99, 137);
+  margin: 0;
+}
+
+.container {
+  margin-top: 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn.btn-primary {
+  padding: 5px 8px;
+  background-color: #387588;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  width: 8rem;
+  height: 4rem;
+}
+
+.btn.btn-primary.small {
+  padding: 2px 3px;
+}
+
+button:disabled,
+button.btn:disabled {
+  cursor: not-allowed;
+}
+
+.disabled {
+  color: rgb(255, 0, 0);
+  cursor: not-allowed;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2rem;
+}
+
+.grid>button {
+  width: 7rem;
+  height: 7rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: rgb(45, 164, 178);
+  background-color: rgb(248, 248, 248);
+}
+
+.row {
+  margin-top: 1rem;
+}
+
+.winner {
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgb(45, 164, 178);
+}
+
+@media screen and (max-width: 320px) {
+  .grid>button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+  }
+
+  .winner {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .grid>button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 5rem;
+  }
+
+  .winner {
+    font-size: 2rem;
+  }
+}

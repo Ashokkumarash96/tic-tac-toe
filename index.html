@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Define the metadata of the document -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the title and the icon of the document -->
     <title>Tic Tac Toe</title>
     <link rel="icon" href="./assets/titimg.png" type="image/icon type" />
-    <!-- custom css -->
+    <!-- Link the external CSS file for styling -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- Create a container element to hold the game elements -->
     <div class="container text-center">
+      <!-- Create an h1 element to display the game title -->
       <h1>Tic Tac Toe Game</h1>
+      <!-- Create a div element with id grid to display the game board -->
       <div id="grid" class="grid"></div>
+      <!-- Create a row element to contain the reset button -->
       <div class="row">
+        <!-- Create a button element with id reset to reset the game on click -->
         <button id="reset" class="btn btn-primary">Reset</button>
       </div>
+      <!-- Create a p element with id winner to display the winner or tie message -->
       <p id="winner" class="winner"></p>
     </div>
-    <!-- custom script -->
+    <!-- Link the external JavaScript file for functionality -->
     <script src="./scripts/script.js"></script>
   </body>
 </html>
